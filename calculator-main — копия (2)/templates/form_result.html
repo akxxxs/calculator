@@ -1,0 +1,18 @@
+<!-- Создай страницу для вывода информации пользователя -->
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vievport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {% block content %}
+    <h1>Спасибо за заполнение формы!</h1>
+    <p>Имя {{ name }}</p>
+    <p>Почта {{email}}</p>
+    <p>Адрес {{address}}</p>
+    <p>Дата {{date}}</p>
+    {% endblock %}
+</body>
+</html>
